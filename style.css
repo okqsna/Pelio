@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home__page{
+    font-family: 'DM Sans', sans-serif;
+    width:100%;
+    height:150vh;
+    display: flex;
+    flex-direction: row;
+}
+.left__hp{
+    width:23%;
+    height: 150vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px 40px 20px;
+}
+.logo__left{
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 54px;
+    width: 156.58px;
+
+}
+.dashboard__left{
+    width:270px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #0E6EFF;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 25px;
+}
+.p_menu{
+    margin-left: 20px;
+}
+.dashboard__logo_left{
+    background-image: url(img/home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+.wallet__logo_left{
+    background-image: url(img/wallet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+.payment__logo_left{
+    background-image: url(img/card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 17.63px; 
+}
+.invoice__logo_left{
+    background-image: url(img/receipt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+.setting__logo_left{
+    background-image: url(img/settings.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+.transactions__logo_left{
+    background-image: url(img/change.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+.wallet__left, .payment__left, .invoice__left, 
+.setting__left, .transactions__left{
+    width:270px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: #72757A;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 25px;
+    cursor: pointer;
+}
+.right__hp{
+    width:77%;
+    height: 150vh;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+}
+.header__right{
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo__header_right{
+    background-image: url(img/dash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 308px;
+    height: 62px;
+}
+.search__header_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 300px;
+    height: 62px;
+    background-color: #ffff;
+    color:#72757A;
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 10px 30px 10px 30px;
+}
+.search__logo{
+    background-image: url(img/find.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20.02px;
+    height: 20.02px;
+}
+.notifications__header_right{
+    background-image: url(img/bell.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+.message__header_right{
+    background-image: url(img/message.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 17.58px;
+}
+.account__header_right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.acc__logo{
+    background-image: url(img/guy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+}
+.p1_acc{
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.p2_acc{
+    color: #72757A;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.triangle__acc{
+    background-image: url(img/triangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 14px;
+    height: 8px;
+    margin-left: 30px;
+}
