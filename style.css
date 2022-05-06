@@ -187,3 +187,431 @@
     height: 8px;
     margin-left: 30px;
 }
+.stat__hp{
+    height: 149px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.tinvoices__stat{
+    height: 120px;
+    width:240px;
+    background-color: #03B664;
+    border-radius: 20px;
+    display: flex;
+    padding:25px 0 0 20px;
+}
+.tinvoices__logo{
+    width: 45px;
+    height: 45px;
+    background: #00D171;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tinvoices__img{
+    background-image: url(img/invoice.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22px;
+    height: 21.87px;
+}
+.tinvoices__txt{
+    margin-left: 14px;
+}
+.p1__tinvoices{
+    font-size: 23px;
+    font-weight: 600;
+    color:#FFFFFF;
+}
+.p2__tinvoices{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.pinvoices__stat{
+    height: 120px;
+    width:240px;
+    background-color: #01BEFF;
+    border-radius: 20px;
+    display: flex;
+    padding:25px 0 0 20px;
+}
+.pinvoices__logo{
+    width: 45px;
+    height: 45px;
+    background: #94c4f4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pinvoices__img{
+    background-image: url(img/allow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+}
+.pinvoices__txt{
+    margin-left: 14px;
+}
+.p1__pinvoices{
+    font-size: 23px;
+    font-weight: 600;
+    color:#FFFFFF;
+}
+.p2__pinvoices{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.uinvoices__stat{
+    height: 120px;
+    width:240px;
+    background-color: #FFBF26;
+    border-radius: 20px;
+    display: flex;
+    padding:25px 0 0 20px;
+}
+.uinvoices__logo{
+    width: 45px;
+    height: 45px;
+    background: #f6d992;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.uinvoices__img{
+    background-image: url(img/close.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+}
+.uinvoices__txt{
+    margin-left: 14px;
+}
+.p1__uinvoices{
+    font-size: 23px;
+    font-weight: 600;
+    color:#FFFFFF;
+}
+.p2__uinvoices{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.tsinvoices__stat{
+    height: 120px;
+    width:240px;
+    background-color: #FF684D;
+    border-radius: 20px;
+    display: flex;
+    padding:25px 0 0 20px;
+}
+.tsinvoices__logo{
+    width: 45px;
+    height: 45px;
+    background: #ff817e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tsinvoices__img{
+    background-image: url(img/lists.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+}
+.tsinvoices__txt{
+    margin-left: 14px;
+}
+.p1__tsinvoices{
+    font-size: 23px;
+    font-weight: 600;
+    color:#FFFFFF;
+}
+.p2__tsinvoices{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.ls__hp{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ltransactions__hp{
+    width: 75%;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #ffff;
+    padding: 20px;
+}
+.row1__lt{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoinfo__row1{
+    display: flex;
+    flex-direction:row;
+}
+.square__logoinfo{
+    width: 42px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #0E6EFF;
+}
+.txt__logoinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 8px;
+}
+.p1__logoinfo{
+    color: #0E6EFF;
+    font-weight: 500;
+    font-size: 14px;
+}
+.p2__logoinfo{
+    color: #000000;
+    font-weight: 700;
+    font-size: 15px;
+}
+.amount__row1{
+    display: flex;
+    flex-direction: row;
+}
+.amount__logo1{
+    width: 42px;
+    height: 42px;
+    background-color: #70DAFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo1__img{
+    background-image: url(img/listblue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 17.89px;
+}
+.txt__amount{
+    margin-left: 10px;
+}
+.p1__amount{
+    color: #72757A;
+    font-size: 14px;
+    font-weight: 500;
+}
+.p2__amount{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+}
+.time__row1{
+    color: #72757A;
+    font-size: 14px;
+}
+.print__row1{
+    background-image: url(img/printer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25.95px;
+    height: 26px;
+}
+.more__row1{
+    background-image: url(img/points.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28px;
+    height: 6px;
+    margin-right: 10px;
+}
+.row2__lt{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.square__logoinfo2{
+    width: 42px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #FFBF26;
+}
+.amount__logo2{
+    width: 42px;
+    height: 42px;
+    background-color: #f6d992;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo2__img{
+    background-image: url(img/listorange.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 17.89px;
+}
+.txt2__amount{
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.time__row2{
+    color: #72757A;
+    font-size: 14px;
+    
+}
+.row3__lt{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.square__logoinfo3{
+    width: 42px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #00D171;
+}
+.amount__logo3{
+    width: 42px;
+    height: 42px;
+    background-color: #00D171;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.logo3__img{
+    background-image: url(img/listgreen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 17.89px;
+}
+.txt3__amount{
+    margin-left: 10px;
+}
+.row4__lt{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.square__logoinfo4{
+    width: 42px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #FF684D;
+}
+.amount__logo4{
+    width: 42px;
+    height: 42px;
+    background-color: #ff817e;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.logo4__img{
+    background-image: url(img/listred.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18px;
+    height: 17.89px;
+}
+.txt4__amount{
+    margin-left: 10px;
+}
+.row5__lt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.txt__row5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:170px;
+    margin-top:55px;
+}
+.p1__txt5{
+    font-size: 15px;
+    color: #72757A;
+    font-weight: 500;
+}
+.p1_black__txt5{
+    font-size: 15px;
+    color: #000000;
+    font-weight: 500;
+}
+.btns__row5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btn__row5{
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border: 1px solid #A2A2A2;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #72757A;
+    font-size: 15px;
+    font-weight: 700;
+}
+.btn2__row5{
+    width: 44px;
+    height: 44px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #0E6EFF;
+    box-shadow: 0px 7px 15px rgba(14, 110, 255, 0.3);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.logo1__btn_row5{
+    background-image: url(img/arrowleft.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 7.05px;
+    height: 9.52px;
+}
+.logo3__btn_row5{
+    background-image: url(img/arrowright.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:7.05px;
+    height: 12px;
+}
