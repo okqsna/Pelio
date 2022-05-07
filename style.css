@@ -345,6 +345,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
 
 .ltransactions__hp{
@@ -615,3 +616,61 @@
     width:7.05px;
     height: 12px;
 }
+.statistics__ls{
+    width: 24%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #ffff;
+    padding: 20px;
+}
+.colors__stats{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+}
+.col1__colors_stats{
+    display: flex;
+    flex-direction: column;
+}
+
+.stats__combo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.green__color_stats{
+    width: 10px;
+    height: 10px;
+    background-color: #03B664;
+    border-radius: 100%;
+    margin: 10px 5px 0px 0px; 
+}
+.yellow__color_stats{
+    width: 10px;
+    height: 10px;
+    background-color: #FFBA14;
+    border-radius: 100%;
+    margin: 10px 5px 0px 0px; 
+}
+.blue__color_stats{
+    width: 10px;
+    height: 10px;
+    background-color: #0E6EFF;
+    border-radius: 100%;
+    margin: 10px 5px 0px 0px; 
+}
+.red__color_stats{
+    width: 10px;
+    height: 10px;
+    background-color: #FF684D;
+    border-radius: 100%;
+    margin: 10px 5px 0px 0px; 
+}
+.txt__colors{
+    font-size: 14px;
+    color: #72757A;
+    margin: 10px 0px 0px 0px; 
+}
+
