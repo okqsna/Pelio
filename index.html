@@ -9,7 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="home__page">
@@ -44,13 +47,30 @@
       </div>
       <div class="right__hp">
           <div class="header__right">
-              <div class="logo__header_right"></div>
-              <div class="search__header_right">
-                  <p>Search here...</p>
-                  <div class="search__logo"></div>
+              <div class="logo__header_right">
+                  <div class="squares__logo_header">
+                      <div class="row1__squares_logo">
+                          <div class="square1__logo"></div>
+                          <div class="square2__logo"></div>
+                      </div>
+                      <div class="row2__squares_logo">
+                          <div class="square3__logo"></div>
+                          <div class="square4__logo"></div>
+                      </div>
+                  </div>
+                  <p>Dashboard</p>
               </div>
-              <div class="notifications__header_right"></div>
-              <div class="message__header_right"></div>
+              <div class="search__header_right">
+                 <input type="text" placeholder="Search Here..." class="search__input">
+              </div>
+              <div class="notifications__header_right">
+                <div class="notification__msg">5</div>
+                  <div class="notification__img"></div>
+                </div>
+              <div class="message__header_right">
+                <div class="message__msg">23</div>
+                <div class="message__img"></div>
+              </div>
               <div class="account__header_right">
                   <div class="acc__logo"></div>
                   <div class="info__acc">
@@ -214,34 +234,10 @@
                   </div>
               </div>
               <div class="statistics__ls">
-                  <h3>Statistics</h3>
-                  <div class="stats__st"></div>                      
-                  
-                  <div class="colors__stats">
-                      <div class="col1__colors_stats">
-                          <div class="stats__combo">
-                              <div class="green__color_stats"></div>
-                              <p class="txt__colors">Green</p>
-                          </div>
-                          <div class="stats__combo">
-                            <div class="yellow__color_stats"></div>
-                            <p class="txt__colors">Yellow</p>
-                        </div>
-                          
-                      </div>
-                      <div class="col2__colors_stats">
-                        <div class="stats__combo">
-                            <div class="blue__color_stats"></div>
-                            <p class="txt__colors">Blue</p>
-                        </div>
-                        <div class="stats__combo">
-                            <div class="red__color_stats"></div>
-                            <p class="txt__colors">Red</p>
-                        </div>
-                      </div>
-                  </div>
+                  <h3>Statistics</h3>    
               </div>
-            </div>
+        </div>
+             
             <div class="bt__row">
             <div class="bt__1">
                 <div class="card__bt">
@@ -273,13 +269,88 @@
                     <div class="transactions__img"></div>
                 </div>
             </div>
+            <div class="balance__details">
+                <h4>Balance Details</h4>
+                <p class="total__balance">Total balance</p>
+                <p class="amount__balance">$221,478</p>
+                <div class="row1__balance">
+                    <div class="lastmonth__rb">
+                        <p class="lastm__p">Last Month</p>
+                        <p class="lastm__amount">$ 14,849</p>
+                    </div>
+                    <div class="expenses__rb">
+                        <p class="expenses__p">Expenses</p>
+                        <p class="expenses__amount">$ 14,849</p>
+                    </div>
+                </div>
+                <div class="row2__balance">
+                    <div class="taxes__rb">
+                        <p class="taxes__p">Taxes</p>
+                        <p class="taxes__amount">$255.25</p>
+                    </div>
+                    <div class="debt__rb">
+                        <p class="debt__p">Debt</p>
+                        <p class="debt__amount">$365,478</p>
+                    </div>
+                </div>
+            </div>
+            <div class="activity__bt">
+                <p>Activity</p>
+                <h3> $ 48,284</h3>
+                <div class="stats__st">
+                    <canvas id="myChart"></canvas>
+                  </div>     
+
+            </div>
         </div>
           </div>
+        </div>
               
           </div>
       </div>
     </div>
+    
+    <script>
+        const data = {
+            labels: [
+                'Sunday',
+                'Monday',
+                'Tuesday'
+            ],
+            datasets: [{
+                data: [10, 20, 70],
+                backgroundColor: [
+                    'rgba(0, 209, 113, 1)',
+                    'rgba(255, 104, 77, 1)',
+                    'rgba(1, 190, 255, 1)'
+                ],
+                hoverOffset: 4
+            }]
+        };
 
+        const config = {
+            type: 'doughnut',
+            data: data,
+        };
+
+       function setData(){
+        let data1=Math.floor(Math.random()*100);
+        let data2=Math.floor(Math.random()*(100-data1));
+        let data3=100-data1-data2;
+       
+
+        data.datasets[0].data[0]=data1;   
+        data.datasets[0].data[1]=data2;   
+        data.datasets[0].data[2]=data3;  
+       }
+         setData();
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+        
+
+        </script>
     
 
 
