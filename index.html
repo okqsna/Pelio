@@ -9,10 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<link rel="stylesheet"
-href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/e68918fe95.js" crossorigin="anonymous"></script>
  <link rel="stylesheet" href="style.css">
+ <link type="image/x-icon" rel="icon" href="img/favilogo.png">
 </head>
 <body>
     <div class="home__page">
@@ -89,7 +88,6 @@ href=
                       <p class="p1__tinvoices">32,568</p>
                       <p class="p2__tinvoices">Total Invoices</p>
                   </div>
-                  <div class="tinvoices__circle"></div>
               </div>
               <div class="pinvoices__stat">
                 <div class="pinvoices__logo">
@@ -99,7 +97,7 @@ href=
                     <p class="p1__pinvoices">8,558</p>
                     <p class="p2__pinvoices">Paid Invoices</p>
                 </div>
-                <div class="pinvoices__circle"></div>
+                
               </div>
               <div class="uinvoices__stat">
                 <div class="uinvoices__logo">
@@ -109,7 +107,7 @@ href=
                     <p class="p1__uinvoices">2,568</p>
                     <p class="p2__uinvoices">Unpaid Invoices</p>
                 </div>
-                <div class="uinvoices__circle"></div>
+                
               </div>
               <div class="tsinvoices__stat">
                 <div class="tsinvoices__logo">
@@ -119,7 +117,7 @@ href=
                     <p class="p1__tsinvoices">668</p>
                     <p class="p2__tsinvoices">Total Invoices Sent</p>
                 </div>
-                <div class="tsinvoices__circle"></div>
+               
               </div>
           </div>
 
@@ -144,7 +142,7 @@ href=
                           </div>
                       </div>
                       <div class="time__row1">5 min ago</div>
-                      <div class="print__row1"></div>
+                      <div class="print__row1" id="print__row1"></div>
                       <div class="more__row1"></div>
                   </div>
                   <div class="row2__lt">
@@ -165,7 +163,7 @@ href=
                         </div>
                     </div>
                     <div class="time__row2">5 min ago</div>
-                    <div class="print__row1"></div>
+                    <div class="print__row1" id="print__row1"></div>
                     <div class="more__row1"></div>
                   </div>
                   <div class="row3__lt">
@@ -186,7 +184,7 @@ href=
                         </div>
                     </div>
                     <div class="time__row3">5 min ago</div>
-                    <div class="print__row1"></div>
+                    <div class="print__row1" id="print__row1"></div>
                     <div class="more__row1"></div> 
                   </div>
                   <div class="row4__lt">
@@ -207,7 +205,7 @@ href=
                         </div>
                     </div>
                     <div class="time__row4">5 min ago</div>
-                    <div class="print__row1"></div>
+                    <div class="print__row1" id="print__row1"></div>
                     <div class="more__row1"></div> 
                   </div>
                   <div class="row5__lt">
@@ -216,7 +214,7 @@ href=
                       </div>
                       <div class="btns__row5">
                           <div class="btn__row5">
-                              <div class="logo1__btn_row5"></div>
+                              <div class="logo1__btn_row5">← </div>
                           </div>
                           <div class="btn2__row5">
                             <div class="logo2__btn_row5">1</div>
@@ -228,13 +226,17 @@ href=
                               <div class="logo2__btn_row5">3</div>
                             </div>
                           <div class="btn__row5">
-                            <div class="logo3__btn_row5"></div>
+                            <div class="logo3__btn_row5">→</div>
                           </div>
                       </div>
                   </div>
               </div>
               <div class="statistics__ls">
-                  <h3>Statistics</h3>    
+                  <h3>Statistics</h3> 
+                  <div class="stats__ls">
+                    <canvas id="myChart1"></canvas>
+                  </div>
+                     
               </div>
         </div>
              
@@ -348,9 +350,36 @@ href=
             document.getElementById('myChart'),
             config
         );
-        
-
-        </script>
+        const ctx = document.getElementById('myChart1').getContext('2d');
+        const myChart1 = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Green'],
+        datasets: [{
+            label: 'Statisctics',
+            data: [0, 250, 500],
+            backgroundColor: [
+                'rgba(255, 104, 77, 1)',
+                'rgba(14, 110, 255, 1)',
+                'rgba(0, 209, 113, 1)'
+            ],
+            borderColor: [
+                'rgba(255, 104, 77, 1)',
+                'rgba(14, 110, 255, 1)',
+                'rgba(0, 209, 113, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+    </script>
     
 
 
