@@ -301,6 +301,7 @@
     font-size: 14px;
     color: #FFFFFF;
 }
+
 .pinvoices__stat{
     height: 110px;
     width:220px;
@@ -670,12 +671,13 @@
     color: #72757A;
     font-size: 15px;
     font-weight: 700;
+
 }
 .btn2__row5{
     width: 44px;
     height: 44px;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 800;
     color: #FFFFFF;
     background-color: #0E6EFF;
     box-shadow: 0px 7px 15px rgba(14, 110, 255, 0.3);
@@ -685,15 +687,10 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+
 }
 
-.logo1__btn_row5{
-    background-image: url(img/arrowleft.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 7.05px;
-    height: 9.52px;
-}
+
 .btn__row5:hover{
     color: #ffff;
     background-color: #0E6EFF;
@@ -702,13 +699,7 @@
     transition: 0.3s;
     cursor: pointer;
 }
-.logo3__btn_row5{
-    background-image: url(img/arrowright.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width:7.05px;
-    height: 12px;
-}
+
 .statistics__ls{
     width: 22%;
     height: 400px;
@@ -723,6 +714,13 @@
     margin-top: 30px;
     width:195px;
     height:290px;   
+}
+.stats__ls{
+    height: 390px;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bt__row{
     display: flex;
@@ -799,21 +797,22 @@ color: #FFFFFF;
     flex-direction: row;
     margin:75px 0px 0px 25px;
 }
-/* .circle__c{
+.circle__c{
     width: 45px;
     height: 45px;
     border-radius: 100%;
     background: #FFFFFF;
     opacity: 0.4;
+    margin-right: -20px;
 
-} */
-/* .circle__c2{
+}
+.circle__c2{
     width: 45px;
     height: 45px;
     border-radius: 100%;
     background: #FFFFFF;
     opacity: 0.4;
-} */
+}
 .transactions__bt{
     width: 380px;
     height: 104px;
