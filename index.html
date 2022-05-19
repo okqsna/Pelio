@@ -14,30 +14,33 @@
  <link type="image/x-icon" rel="icon" href="img/favilogo.png">
 </head>
 <body>
+    <div class="wrapp">
     <div class="home__page">
       <div class="left__hp">
        <div class="logo__left"></div>
-       <div class="dashboard__left">
-           <div class="dashboard__logo_left"></div>
+       <div class="dashboard__left" id="dashboardLeft">
+           <div class="dashboard__logo_left">
+            <i class="fa-solid fa-house"></i>
+           </div>
            <p class="p_menu">Dashboard</p>
        </div>
-       <div class="wallet__left">
+       <div class="wallet__left" id="walletLeft">
         <div class="wallet__logo_left"></div>
         <p class="p_menu">My wallet</p>
        </div>
-       <div class="payment__left">
+       <div class="payment__left" id="paymentLeft">
            <div class="payment__logo_left"></div>
            <p class="p_menu">Payment</p>
        </div>
-       <div class="invoice__left">
+       <div class="invoice__left" id="invoiceLeft">
            <div class="invoice__logo_left"></div>
            <p class="p_menu">Invoice</p>
        </div>
-       <div class="setting__left">
+       <div class="setting__left"  id="settingLeft">
            <div class="setting__logo_left"></div>
            <p class="p_menu">Setting</p>
        </div>
-       <div class="transactions__left">
+       <div class="transactions__left" id="transactionsLeft">
            <div class="transactions__logo_left"></div>
            <p class="p_menu">Transactions</p>
        </div>
@@ -73,8 +76,8 @@
               <div class="account__header_right">
                   <div class="acc__logo"></div>
                   <div class="info__acc">
-                      <p class="p1_acc">Hi Shamim</p>
-                      <p class="p2_acc">engshamim@gmail.com</p>
+                      <p class="p1_acc">Name Surname</p>
+                      <p class="p2_acc">namesurname@gmail.com</p>
                   </div>
                   <div class="triangle__acc"></div>
               </div>
@@ -307,9 +310,16 @@
         </div>
           </div>
         </div>
-              
-          </div>
-      </div>
+              <div class="sign__page">
+                  <div class="sign__card">
+                  <div class="logo__sign"></div>
+                  <input type="text" placeholder="Username" class="user__sign">
+                  <input type="password" placeholder="Password" class="pass_sign">
+                  <button>Log in</button>
+                </div>
+                  <button>Sign up</button>
+              </div>
+          
     </div>
     
     <script>
@@ -379,6 +389,90 @@
         }
     }
 });
+dashboardLeft.onclick=function(){
+    dashboardLeft.style.backgroundColor="#0E6EFF";
+    dashboardLeft.style.color="#ffff";
+    walletLeft.style.backgroundColor="#ffff";
+    walletLeft.style.color="#72757A";
+    paymentLeft.style.backgroundColor="#ffff";
+    paymentLeft.style.color="#72757A";
+    invoiceLeft.style.backgroundColor="#ffff";
+    invoiceLeft.style.color="#72757A";
+    settingLeft.style.backgroundColor="#ffff";
+    settingLeft.style.color="#72757A";
+    transactionsLeft.style.backgroundColor="#ffff";
+    transactionsLeft.style.color="#72757A";
+}
+walletLeft.onclick=function(){
+    dashboardLeft.style.backgroundColor="#ffff";
+    dashboardLeft.style.color="#72757A";
+    walletLeft.style.backgroundColor="#0E6EFF";
+    walletLeft.style.color="#ffff";
+    paymentLeft.style.backgroundColor="#ffff";
+    paymentLeft.style.color="#72757A";
+    invoiceLeft.style.backgroundColor="#ffff";
+    invoiceLeft.style.color="#72757A";
+    settingLeft.style.backgroundColor="#ffff";
+    settingLeft.style.color="#72757A";
+    transactionsLeft.style.backgroundColor="#ffff";
+    transactionsLeft.style.color="#72757A";
+}
+paymentLeft.onclick=function(){
+    paymentLeft.style.backgroundColor="#0E6EFF";
+    paymentLeft.style.color="#ffff";
+    walletLeft.style.backgroundColor="#ffff";
+    walletLeft.style.color="#72757A";
+    dashboardLeft.style.backgroundColor="#ffff";
+    dashboardLeft.style.color="#72757A";
+    invoiceLeft.style.backgroundColor="#ffff";
+    invoiceLeft.style.color="#72757A";
+    settingLeft.style.backgroundColor="#ffff";
+    settingLeft.style.color="#72757A";
+    transactionsLeft.style.backgroundColor="#ffff";
+    transactionsLeft.style.color="#72757A";
+}
+invoiceLeft.onclick=function(){
+    invoiceLeft.style.backgroundColor="#0E6EFF";
+    invoiceLeft.style.color="#ffff";
+    walletLeft.style.backgroundColor="#ffff";
+    walletLeft.style.color="#72757A";
+    dashboardLeft.style.backgroundColor="#ffff";
+    dashboardLeft.style.color="#72757A";
+    paymentLeft.style.backgroundColor="#ffff";
+    paymentLeft.style.color="#72757A";
+    settingLeft.style.backgroundColor="#ffff";
+    settingLeft.style.color="#72757A";
+    transactionsLeft.style.backgroundColor="#ffff";
+    transactionsLeft.style.color="#72757A";
+}
+settingLeft.onclick=function(){
+    settingLeft.style.backgroundColor="#0E6EFF";
+    settingLeft.style.color="#ffff";
+    walletLeft.style.backgroundColor="#ffff";
+    walletLeft.style.color="#72757A";
+    dashboardLeft.style.backgroundColor="#ffff";
+    dashboardLeft.style.color="#72757A";
+    paymentLeft.style.backgroundColor="#ffff";
+    paymentLeft.style.color="#72757A";
+    invoiceLeft.style.backgroundColor="#ffff";
+    invoiceLeft.style.color="#72757A";
+    transactionsLeft.style.backgroundColor="#ffff";
+    transactionsLeft.style.color="#72757A";
+}
+transactionsLeft.onclick=function(){
+    transactionsLeft.style.backgroundColor="#0E6EFF";
+    transactionsLeft.style.color="#ffff";
+    walletLeft.style.backgroundColor="#ffff";
+    walletLeft.style.color="#72757A";
+    dashboardLeft.style.backgroundColor="#ffff";
+    dashboardLeft.style.color="#72757A";
+    paymentLeft.style.backgroundColor="#ffff";
+    paymentLeft.style.color="#72757A";
+    invoiceLeft.style.backgroundColor="#ffff";
+    invoiceLeft.style.color="#72757A";
+    settingLeft.style.backgroundColor="#ffff";
+    settingLeft.style.color="#72757A";
+}
     </script>
     
 
