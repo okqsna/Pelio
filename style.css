@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.wrapp{
+    display: flex;
+    flex-direction: column;
+}
 .home__page{
     font-family: 'DM Sans', sans-serif;
     width:100%;
@@ -10,13 +14,23 @@
     display: flex;
     flex-direction: row;
 }
+
 .left__hp{
     width:23%;
-    height: 150vh;
+    height: 170vh;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     padding: 40px;
+}
+.right__hp{
+    width:77%;
+    height: 170vh;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+
 }
 .logo__left{
     background-image: url(img/logo.png);
@@ -45,44 +59,41 @@
     margin-left: 20px;
 }
 .dashboard__logo_left{
-    background-image: url(img/home.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 24px;
-    height: 24px;
+    width: 14px;
+    height: 14px;
 }
 .wallet__logo_left{
-    background-image: url(img/wallet.png);
+    /* background-image: url(img/wallet.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     width: 24px;
     height: 24px;
 }
 .payment__logo_left{
-    background-image: url(img/card.png);
+    /* background-image: url(img/card.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     width: 24px;
     height: 17.63px; 
 }
 .invoice__logo_left{
-    background-image: url(img/receipt.png);
+    /* background-image: url(img/receipt.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     width: 24px;
     height: 24px;
 }
 .setting__logo_left{
-    background-image: url(img/settings.png);
+    /* background-image: url(img/settings.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     width: 24px;
     height: 24px;
 }
 .transactions__logo_left{
-    background-image: url(img/change.png);
+    /* background-image: url(img/change.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     width: 24px;
     height: 24px;
 }
@@ -102,21 +113,15 @@
     padding: 25px;
     cursor: pointer;
 }
-.wallet__left:hover, .payment__left:hover, 
+.dashboard__left:hover,.wallet__left:hover, .payment__left:hover, 
 .invoice__left:hover, .setting__left:hover, 
 .transactions__left:hover {
     color:#FFFFFF;
     background-color: #0E6EFF;
     transition: 0.3s;
+    cursor: pointer;
 }
-.right__hp{
-    width:77%;
-    height: 170vh;
-    background-color: #F5F5F5;
-    display: flex;
-    flex-direction: column;
-    padding:30px;
-}
+
 .header__right{
     display:flex ;
     flex-direction: row;
@@ -170,7 +175,7 @@
 
 .search__input:focus {
     outline: none;
-  }
+}
  .notifications__header_right{
     width: 43px;
     height: 47px;
@@ -232,11 +237,10 @@
     margin-left: 20px;
 }
 .acc__logo{
-    background-image: url(img/guy.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #72757A;
     width: 60px;
     height: 60px;
+    border-radius: 10px;
 }
 .p1_acc{
     color: #000000;
@@ -250,12 +254,13 @@
     margin-left: 10px;
 }
 .triangle__acc{
-    background-image: url(img/triangle.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 14px;
-    height: 8px;
+    width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 10px solid #A2A2A2;
     margin-left: 30px;
+    cursor: pointer;
 }
 .stat__hp{
     height: 149px;
@@ -830,9 +835,9 @@ color: #FFFFFF;
     margin-left: 15px;
 }
 .transactions__left_bt p{
-font-size: 18px;
-font-weight: 700;
-color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
 }
 .transactions__left_bt h5{
     font-weight: 400;
@@ -961,3 +966,55 @@ color: #000000;
     font-weight: 700;
     color: #000000;
 }
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+    border-radius:2px
+}
+
+  ::-webkit-scrollbar-thumb {
+    background: #A2A2A2; 
+    border-radius: 2px;
+    
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A2A2A2; 
+  }
+  .sign__page{
+    width: 100%;
+    background-color: #F5F5F5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo__sign{
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 54px;
+    width: 156.58px;
+    margin-bottom: 50px;
+}
+.sign__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 400px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border:2px solid #0E6EFF;
+}
+.user__sign{
+    background-color: #FFFFFF;
+    color: #0E6EFF;
+    padding: 4px;
+    border:none;
+}
+
+    
