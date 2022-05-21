@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 .wrapp{
+    font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-direction: column;
 }
 .home__page{
-    font-family: 'DM Sans', sans-serif;
     width:100%;
     height:170vh;
-    display: flex;
+    display: none;
     flex-direction: row;
 }
 
@@ -66,8 +66,8 @@
     /* background-image: url(img/wallet.png);
     background-repeat: no-repeat;
     background-size: cover; */
-    width: 24px;
-    height: 24px;
+  font-size: 10px;
+    color:#72757A;
 }
 .payment__logo_left{
     /* background-image: url(img/card.png);
@@ -1010,11 +1010,40 @@ color: #FFFFFF;
     border-radius: 15px;
     border:2px solid #0E6EFF;
 }
-.user__sign{
+.user__sign, .pass__sign{
     background-color: #FFFFFF;
-    color: #0E6EFF;
     padding: 4px;
     border:none;
+    text-decoration: none;
+    margin-bottom: 15px;
+    cursor: pointer;
 }
-
-    
+.user__sign:focus,.pass__sign:focus  {
+    outline: none;
+}
+.btns__signpage{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.log__signpage, .sign__signpage{
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    border:none;
+    background-color: #0E6EFF;
+    color: #FFFFFF;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.log__signpage:hover, .sign__signpage:hover{
+    background-color: #FFFFFF;
+    color: #0E6EFF;
+    border: 1px solid #0E6EFF;
+    transition: 0.1s;
+}
