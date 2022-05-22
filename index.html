@@ -18,8 +18,8 @@
     <link type="image/x-icon" rel="icon" href="img/favilogo.png">
 </head>
 <body>
-    <div class="wrapp">
-    <div class="home__page">
+     <div class="wrapp">
+    <div class="home__page" id="homePage">
       <div class="left__hp">
        <div class="logo__left"></div>
        <div class="dashboard__left" id="dashboardLeft">
@@ -78,10 +78,10 @@
                 <div class="message__img"></div>
               </div>
               <div class="account__header_right">
-                  <div class="acc__logo"></div>
+                  <div class="acc__logo" id="accLogo"></div>
                   <div class="info__acc">
-                      <p class="p1_acc">Name Surname</p>
-                      <p class="p2_acc">namesurname@gmail.com</p>
+                      <p class="p1_acc" id="userName">User</p>
+                      <p class="p2_acc" id="gmail">@gmail.com</p>
                   </div>
                   <div class="triangle__acc"></div>
               </div>
@@ -314,17 +314,21 @@
         </div>
           </div>
         </div>
-              <div class="sign__page">
+              <div class="sign__page" id="signPage">
                   <div class="sign__card">
                   <div class="logo__sign"></div>
-                  <input type="text" placeholder="Username" class="user__sign">
-                  <input type="password" placeholder="Password" class="pass_sign">
-                  <button>Log in</button>
+                  <input type="text" placeholder="Username" class="user__sign" id="userSign">
+                  <input type="password" placeholder="Password" class="pass__sign" id="passSign">
+                 <div class="btns__signpage">
+                     <a class="log__signpage" id="logIn">Log in</a>
+                     <a class="sign__signpage" id="signUp">Sign up</a>
+                  </div>
                 </div>
-                  <button>Sign up</button>
               </div>
           
     </div>
+    
+    
     
     <script>
 const data = {
